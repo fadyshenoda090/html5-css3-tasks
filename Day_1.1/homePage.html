@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page layout</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #welcom{
+            text-align: center;
+            font-family: cursive;
+            background-color: purple;
+        }
+        #nav{
+            background-color: skyblue;
+        }
+        #nav>ul>li{
+            margin: 10px;
+            padding: 10px;
+            list-style: none;
+            display: inline-block;
+            color: black;
+        }
+        #nav>ul>li>a{
+            text-decoration: none;
+        }
+        #nav>ul>li>:hover{
+            background-color: orchid;
+            color: black;
+        }
+        #left{
+            background-color: antiquewhite;
+            width: 20%;
+            float: left;
+        }
+        #mainsec{
+            width: 59%;
+            border: 2px solid black;
+            float: left;
+        }
+        #right{
+            background-color: antiquewhite;
+            width: 20%;
+            float: left;
+        }
+        #footer{
+            color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <p id="welcom">Wlcom to my website</p>
+        </header>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">contact me</a></li>
+                <li><a href="#">about me</a></li>
+            </ul>
+        </nav>
+        <aside id="left">
+            nothing to view yet
+        </aside>
+        <section id="mainsec">
+            <form>
+                <label for="name"> enter your name:</label>
+                <input type="text" placeholder="entet your full-name" id="name"> <br>
+                <label for="birthday">enter yor date of birth:</label>
+                <input type="date" value="06-1-2023" min="1-1-2000" id="birthday"> <br>
+                <label for="phone">enter your phone:</label>
+                <input type="tel" id="phone"> <br>
+                <label for="url"> url:</label>
+                <input type="url" id="url"> <br>
+                <label for="range">my progress:</label>
+                <input type="range" id="range"> <br>
+            </form>
+        </section>
+        <aside id="right">
+            nothing to view yet
+        </aside>
+        <div style="clear: both;"></div>
+        <footer id="footer">copyrights &copy; are reserved to صيوحة بيه</footer>
+    </main>
+    <script>
+        
+    </script>
+</body>
+</html>

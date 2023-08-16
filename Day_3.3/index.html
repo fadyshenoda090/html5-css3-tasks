@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <canvas id="mycanvas" height="600" width="600"></canvas>
+
+    <script>
+        let c = document.getElementById("mycanvas");
+        let ctx = c.getContext("2d");
+        let sadImage = new Image();
+        let happyImage = new Image();
+        let originalWidth, originalHeight;
+
+        sadImage.src = "./images/sad";
+        happyImage.src = "./images/happy";
+
+        sadImage.onload = function() {
+            originalWidth = sadImage.width;
+            originalHeight = sadImage.height;
+            ctx.drawImage(sadImage, 30, 30);
+        };
+
+        c.addEventListener("mousedown", function() {
+            ctx.drawImage(happyImage, 30, 30, c.width - 20, c.height - 20);
+        });
+
+        c.addEventListener("mouseup", function() {
+            ctx.clearRect(0, 0, c.width, c.height);
+            ctx.drawImage(sadImage, 30, 30, originalWidth, originalHeight);
+        });
+    </script>
+</body>
+
+</html>

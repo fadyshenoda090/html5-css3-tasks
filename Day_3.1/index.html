@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #droparea {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: rgba(95, 180, 214, 0.301);
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body ondragover="allowDrag(event)">
+    <div id="droparea" ondrop="dropElement(event)" ondragover="allowDrop(event)"></div>
+    <div ondrop="dropElement(event)" ondragover="allowDrop(event)" id="images">
+        <img src="./images/Instagram-logo-modern-paint-splash-social-media-png.png" draggable="true" id="insta">
+        <img src="./images/png-clipart-twitter-twitter-thumbnail.png" draggable="true" ondragstart="startDrag(event)" id="twitter">
+        <img src="./images/png-transparent-youtube-play-button-computer-icons-youtube-youtube-logo-angle-rectangle-logo.png" draggable="true" id="you">
+    </div>
+    <script>
+        function allowDrag(e) {
+            e.preventDefault();
+        }
+
+        function startDrag(e) {
+            e.dataTransfer.setData("item", e.target.id);
+        }
+
+        function dropElement(e) {
+            var img_id = e.dataTransfer.getData("item");
+            var image = document.getElementById(img_id);
+            e.target.appendChild(image);
+        }
+    </script>
+</body>
+</html>

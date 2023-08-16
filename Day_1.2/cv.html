@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        pre {
+            font-size: 20px;
+        }
+
+        .container {
+            border-bottom: .5px solid black;
+            display: flex;
+            align-items: center;
+            background-color: orange;
+        }
+
+        #myimg {
+            float: left;
+            height: 150px;
+            width: 150px;
+            padding-left: 25%;
+        }
+
+        .my_name {
+            padding-left: 50px;
+            font-size: 36px;
+        }
+
+        #left {
+            padding-top: 10px;
+            float: left;
+            width: 40%;
+        }
+
+        #contact {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #languages {
+            text-align: center;
+            font-size: 30px;
+            padding-top: 15px;
+        }
+
+        #langs {
+            padding: 30px;
+            font-size: 30px;
+        }
+
+        .mydata {
+            padding-top: 10px;
+            padding-left: 30px;
+            font-weight: 500;
+            font-family: cursive;
+        }
+
+        #Englis {
+            accent-color: orange;
+        }
+
+        #Japanese {
+            accent-color: orange;
+        }
+
+        #French {
+            accent-color: orange;
+        }
+
+        #info {
+            text-align: center;
+            font-size: 30px;
+            font-family: cursive;
+        }
+
+        #links {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        #i {
+            background-color: red;
+            width: 32%;
+            height: 10px;
+            float: left;
+        }
+
+        #ii {
+            background-color: orange;
+            width: 36%;
+            height: 10px;
+            float: left;
+        }
+
+        #iii {
+            background-color: skyblue;
+            width: 32%;
+            height: 10px;
+            float: left;
+        }
+
+        /* sparator */
+        #sec {
+            background-color: bisque;
+            padding-top: 10px;
+            width: 60%;
+            float: left;
+        }
+
+        #acheivments,
+        #education,
+        #work {
+            font-size: 30px;
+            font-family: cursive;
+            background-color: orange;
+        }
+
+        video{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/8985bf7deb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <header class="container">
+            <img src="./images/ea7a3c32163929.567197ac70bda.png" alt="personal pic" id="myimg">
+            <div class="my_name">
+                <p>Fady Shenoda Masoud</p>
+                <p>Trainee @ the ITI</p>
+            </div>
+            <div style="clear: both;"></div>
+        </header>
+        <aside id="left">
+            <div>
+                <p id="contact" onmouseover="playaudio()"> contact me</p>
+                <div class="mydata">
+                    <P>
+                        <i class="fa-solid fa-house" style="color: #5683d2;"></i> :123 park Avenue.Michigan,Ml
+                    </P>
+                    <p>
+                        <i class="fa-solid fa-mobile" style="color: #5683d2;"></i> :01206753202
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope" style="color: #5683d2;"></i>:Fadyshenoda0o0@gmail.com
+                    </p>
+                </div>
+            </div>
+            <div>
+                <p id="languages">languages</p>
+                <div id="langs">
+                    <p>English</p>
+                    <progress value="90" max="100" low="50" id="English"></progress>
+                    <p>Japanese</p>
+                    <progress value="20" max="100" low="50" id="Japanese"></progress>
+                    <p>French</p>
+                    <progress value="50" max="100" low="50" id="French"></progress>
+                </div>
+            </div>
+            <div style="font-size: 30px; padding-left: 25px;">
+                skilles
+            </div>
+            <p id="info">online info</p>
+            <div id="links">
+                <a href="https://twitter.com/Zoldyck0o0?t=sT9LAOZ8_DM2_KsT8qyx3A&s=09" target="_blank"> <img
+                        src="./images/download.png" title="twitter" height="50px" width="50px"></a>
+                <a href="https://www.linkedin.com/in/fady-shenoda-6b8098216" target="_blank"><img
+                        src="./images/linkedin.png" title="linkedin" height="50px" width="50px"></a>
+                <a href="https://www.facebook.com/fady.shenoda.7792?mibextid=ZbWKwL" target="_blank"><img
+                        src="./images/fb_icon.png" title="facebook" height="50px" width="50px"></a>
+            </div>
+        </aside>
+        <section id="sec">
+            <h id="acheivments">acheivments</h>
+            <div>
+                <pre>
+    Lorem ipsum, dolor sit amet co
+    Lorem ipsum, dolor sit amet co
+    Ad beatae rerum harum itaque l
+    aiores soluta enim sint maxime 
+    </pre>
+            </div>
+            <h id="education">education</h>
+            <div>
+                <pre>
+        Lorem ipsum, dolor sit amet cotype="video/mp4"
+        Lorem ipsum, dolor sit amet co
+        Ad beatae rerum harum itaque l
+        aiores soluta enim sint maxime 
+    </pre>
+            </div>
+            <h id="work">work experience</h>
+            <div>
+                <pre>
+        Lorem ipsum, dolor sit amet co
+        Lorem ipsum, dolor sit amet co
+        Ad beatae rerum harum itaque l
+        aiores soluta enim sint maxime 
+    </pre>
+            </div>
+            <video src="./video/WhatsApp Video 2023-06-04 at 2.58.00 PM.mp4 " type="video/mp4" controls></video>
+        </section>
+        <div style="clear: both;"></div>
+        <footer id="foot">
+            <div id="i"></div>
+            <div id="ii"></div>
+            <div id="iii"></div>
+        </footer>
+
+    </main>
+    <script>
+        var newAudio = document.createElement('audio');
+        var left=document.getElementById("left")
+        left.append(newAudio)
+        newAudio.src = './audio/turbocharger (sound effect)(MP3_320K).mp3';
+        function playaudio() {
+            console.log("log happend");
+            newAudio.play();
+            var left = document.getElementById('left');
+        }
+    </script>
+</body>
+
+</html>

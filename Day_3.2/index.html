@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <svg width="100%" height="850px">
+        <circle cx="400" cy="410" r="400" stroke="green" stroke-width="4" fill="yellow" />
+        <circle cx="200" cy="300" r="80" stroke="black" stroke-width="4" fill="red" id="left" onmouseover="left()" onmouseout="leftleave()"/>
+        <circle cx="600" cy="300" r="80" stroke="black" stroke-width="4" fill="red" id="right" onmouseover="right()" onmouseout="rightleave()"/>
+        <ellipse cx="400" cy="450" rx="40" ry="80" stroke="black" stroke-width="4" fill="red" id="nosee" onmouseover="nosee()" onmouseout="noseleave()"></ellipse>
+        <ellipse cx="400" cy="650" rx="200" ry="40" stroke="black" stroke-width="4" fill="red" id="mouth" onmouseover="mouthe()" onmouseout="mouthleave()"></ellipse>
+    </svg>
+    <script>
+        var LE = document.getElementById("left");
+        var RE = document.getElementById("right");
+        var nose = document.getElementById("nosee");
+        var mouth = document.getElementById("mouth");
+        
+        function left() {
+            LE.style.fill = "white";
+            LE.innerHTML = "left eye";
+        }
+        
+        function right() {
+            RE.style.fill = "white";
+            RE.innerHTML = "right eye";
+        }
+        
+        function nosee() {
+            nose.style.fill = "white";
+            nose.innerHTML = "nose";
+        }
+        
+        function mouthe() {
+            mouth.style.fill = "white";
+            mouth.innerHTML = "mouth";
+        }
+
+        function leftleave() {
+            LE.style.fill = "red";
+        }
+        
+        function rightleave() {
+            RE.style.fill = "red";
+        }
+        
+        function noseleave() {
+            nose.style.fill = "red";
+        }
+        
+        function mouthleave() {
+            mouth.style.fill = "red";
+        }
+    </script>
+</body>
+
+</html>
